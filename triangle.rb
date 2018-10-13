@@ -14,12 +14,24 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+
+  # check if triangle
+  
+  # if zero or negative length
+  if a < 1 || b < 1 || c < 1
+    raise TriangleError
+  elsif a + b < c
+    raise TriangleError
+  end
+
+  # type of triangles
   if a == b && b == c && a == c
     :equilateral
   elsif a == b || b == c || a == c
     :isosceles
   else
     :scalene
+  end
 end
 
 # Error class used in part 2.  No need to change this code.
