@@ -49,4 +49,3 @@ class AboutArrayAssignment < Neo::Koan
     assert_equal "Roy", last_name
   end
 end
- 
